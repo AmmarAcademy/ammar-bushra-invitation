@@ -52,18 +52,6 @@ function updateCountdown() {
 updateCountdown();
 setInterval(updateCountdown, 1000);
 
-document.querySelector('#rsvp-form').addEventListener('submit', (event) => {
-  event.preventDefault();
-  const formData = new FormData(event.target);
-  const response = Object.fromEntries(formData.entries());
-  const savedResponses = JSON.parse(localStorage.getItem('familyWeddingRsvps') || '[]');
-  savedResponses.push({ ...response, submittedAt: new Date().toISOString() });
-  localStorage.setItem('familyWeddingRsvps', JSON.stringify(savedResponses));
-  const name = response.familyHead.trim() || 'there';
-  document.querySelector('#form-status').textContent = `Thank you, ${name}. Your family details have been recorded on this device.`;
-  event.target.reset();
-});
-
 const revealItems = document.querySelectorAll('.welcome, .events__heading, .family-day, .maps-card, .countdown, .rsvp, .closing-blessing, .footer');
 revealItems.forEach((item) => item.classList.add('scroll-reveal'));
 
