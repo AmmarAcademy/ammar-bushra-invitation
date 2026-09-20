@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Wedding invitation for Mohammed Ammar and Bushra.">
+  <title>Mohammed Ammar &amp; Bushra | Wedding Invitation</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="is-closed">
+  <div class="envelope-screen" id="envelope-screen">
+    <div class="envelope-intro"><p class="eyebrow">A wedding invitation</p><p class="envelope-hint">Tap the seal to open</p></div>
+    <div class="envelope" aria-label="Sealed wedding invitation">
+      <div class="envelope__paper"></div><div class="envelope__flap"></div><div class="envelope__front"></div>
+      <button class="wax-seal" id="open-invite" type="button" aria-label="Open wedding invitation"><span>MA<br><i>&amp;</i><br>B</span></button>
+    </div>
+    <p class="envelope-footer">With love, we invite you to celebrate with us</p>
+  </div>
+  <main class="invite-shell" id="invite-content" aria-hidden="true">
+    <section class="hero" id="home">
+      <div class="hero__content">
+        <p class="arabic" lang="ar" dir="rtl">بِسْمِ اللَّهِ الرَّحْمَنِ الرَّحِيمِ</p>
+        <p class="translation">In the name of Allah, the Most Gracious, the Most Merciful</p>
+        <div class="ornament"><span></span><b>◆</b><span></span></div>
+        <p class="eyebrow">Together with their families</p>
+        <div class="hero-rule"><span></span><b>♡</b><span></span></div>
+        <h1>Mohammed Ammar <em>&amp;</em> Bushra</h1>
+        <p class="hero-blessing">With the blessings of Allah</p>
+        <p class="hero-occasion">Nikah &amp; Reception</p>
+        <p class="hero__date">27 December 2026 <span>•</span> The King Meadows, Bangalore</p>
+      </div>
+    </section>
+
+    <section class="welcome section" id="welcome">
+      <p class="section-label">With joyful hearts</p><div class="welcome__copy"><p class="eyebrow">We are getting married</p><h2>And we would love<br><em>for you to be there.</em></h2><p class="body-copy">Together with our families, we invite you to share in the joy of our wedding celebrations.</p><p class="signature">Mohammed Ammar <span>&amp;</span> Bushra</p></div>
+      <div class="welcome__monogram" aria-hidden="true"><span>MA</span><b>&amp;</b><span>B</span><small>OUR DAY</small></div>
+    </section>
+
+    <section class="events section" id="events"><p class="section-label">The celebrations</p><div class="events__heading"><p class="eyebrow">Please join us for</p><h2>Two days<br><em>of celebration.</em></h2></div>
+      <div class="event-grid">
+        <article class="event-card event-card--nikah"><p class="event-card__number">01</p><p class="eyebrow">The Nikah</p><h3>27 December 2026</h3><p class="event-time">After Zuhr prayer</p><p>Nikah followed by lunch<br>The King Meadows<br>Bangalore</p><a href="https://www.google.com/maps/search/?api=1&query=The%20King%20Meadows%20Bangalore" target="_blank" rel="noreferrer">View location <span>↗</span></a></article>
+        <article class="event-card event-card--reception"><p class="event-card__number">02</p><p class="eyebrow">The Reception</p><h3>27 December 2026</h3><p class="event-time">8:00 PM onwards</p><p>The King Meadows<br>Bangalore</p><a href="https://www.google.com/maps/search/?api=1&query=The%20King%20Meadows%20Bangalore" target="_blank" rel="noreferrer">View location <span>↗</span></a></article>
+      </div>
+    </section>
+
+    <section class="countdown section" aria-label="Countdown to the wedding">
+      <div class="countdown__intro"><p class="eyebrow">Counting down to</p><h2>27.12.2026</h2></div>
+      <div class="countdown__clock">
+        <div><strong id="days">000</strong><span>days</span></div><i>:</i>
+        <div><strong id="hours">00</strong><span>hours</span></div><i>:</i>
+        <div><strong id="minutes">00</strong><span>minutes</span></div><i>:</i>
+        <div><strong id="seconds">00</strong><span>seconds</span></div>
+      </div>
+    </section>
+
+    <section class="rsvp section" id="rsvp">
+      <div class="section-label">03 <span>/</span> Be our guest</div>
+      <div class="rsvp__layout">
+        <div><p class="eyebrow">Kindly reply by [RSVP deadline]</p><h2>Will you<br><em>join us?</em></h2><p class="body-copy">Your presence is the loveliest gift. Please let us know if you can make it by completing the form.</p></div>
+        <form class="rsvp-form" id="rsvp-form">
+          <label for="name">Your name</label><input id="name" name="name" type="text" placeholder="Full name" required>
+          <label for="attendance">Will you attend?</label><select id="attendance" name="attendance" required><option value="">Please choose</option><option>Joyfully accepts</option><option>Regretfully declines</option></select>
+          <label for="note">Message <span>(optional)</span></label><textarea id="note" name="note" rows="3" placeholder="A note for the couple"></textarea>
+          <button type="submit">Send RSVP <span>↗</span></button><p class="form-status" id="form-status" role="status"></p>
+        </form>
+      </div>
+    </section>
+
+    <footer class="footer"><p class="wordmark">MA <span>&amp;</span> B</p><p>Mohammed Ammar &amp; Bushra <span>·</span> 27 December 2026</p><a href="#home" aria-label="Back to top">↑</a></footer>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
