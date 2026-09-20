@@ -6,6 +6,7 @@ const openButton = document.querySelector('#open-invite');
 const inviteContent = document.querySelector('#invite-content');
 const envelopeScreen = document.querySelector('#envelope-screen');
 let inviteOpening = false;
+const familyForm = document.querySelector('#rsvp-form');
 
 function openInvite() {
   if (inviteOpening || body.classList.contains('is-open')) return;
@@ -64,3 +65,8 @@ const revealObserver = new IntersectionObserver((entries, observer) => {
 function startScrollReveals() {
   revealItems.forEach((item) => revealObserver.observe(item));
 }
+
+familyForm.addEventListener('submit', () => {
+  document.querySelector('#form-status').textContent = 'Thank you. Your family details have been sent.';
+  window.setTimeout(() => familyForm.reset(), 800);
+});
