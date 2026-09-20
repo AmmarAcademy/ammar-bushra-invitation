@@ -15,7 +15,7 @@ The RSVP form is currently a front-end demo. Connect its submit handler in `scri
 
 ## Family RSVP data
 
- The Google Form collects the family head name, adult count, child count, and phone/WhatsApp. For hotel planning, guests under 5 years are counted as children and guests aged 5 years and above are counted as adults.
- The family invite now links directly to the Google Form at `https://forms.gle/7buCpCPgfzQBvcJR8`. Link that form to Google Sheets from its Responses tab to collect all family submissions centrally.
+The custom family form submits directly to the Google Form using its field IDs. It collects the family head name, adult count, child count, and phone/WhatsApp. For hotel planning, guests under 5 years are counted as children and guests aged 5 years and above are counted as adults.
+Link the Google Form to Google Sheets from its Responses tab to collect all family submissions centrally.
 
 The family invite now links directly to the Google Form at `https://forms.gle/7buCpCPgfzQBvcJR8`. Link that form to Google Sheets from its Responses tab to collect all family submissions centrally.
