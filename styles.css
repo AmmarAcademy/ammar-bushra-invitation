@@ -187,6 +187,7 @@ body { background: #f6f1e7; color: #193f38; }
 .family-invite .footer { padding-top: 34px; padding-bottom: 34px; }
 .rsvp-form__intro { color: #193f38; font: 500 24px/1 var(--serif); margin-bottom: 28px; }.rsvp-form__intro span { display: block; color: #8a785a; font: 600 9px var(--sans); letter-spacing: .15em; margin-top: 8px; text-transform: uppercase; }.rsvp-form__row { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }.rsvp-form__row > div { display: flex; flex-direction: column; }.field-help { color: #8a785a; font-size: 11px; line-height: 1.4; margin: -18px 0 24px; }
 .field-help--rule { margin: -8px 0 28px; }
+.google-form-card { align-self: center; }.google-form-card > p { color: #67726a; font: 400 18px/1.55 var(--serif); }.google-form-button { display: inline-flex; align-items: center; gap: 8px; margin-top: 4px; padding: 15px 18px; background: #193f38; color: #f6f1e7; font-size: 11px; letter-spacing: .12em; text-transform: uppercase; }.google-form-button span { color: #d7bd83; }
 @media (max-width: 700px) { .family-invite .hero__content { padding-top: 150px; padding-bottom: 72px; }.family-invite .welcome { padding-top: 76px; padding-bottom: 76px; }.family-invite .events { padding-top: 70px; padding-bottom: 76px; }.family-invite .countdown { padding-top: 64px; padding-bottom: 72px; }.family-invite .rsvp { padding-top: 68px; padding-bottom: 74px; }.family-invite .closing-blessing { min-height: 260px; padding-top: 48px; padding-bottom: 48px; } }
 
 /* Tighter spacing between invitation content blocks */
